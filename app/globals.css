@@ -6,6 +6,7 @@
   --foreground-rgb: 77, 77, 77;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --font-size-roboto-large: 16px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,8 +17,17 @@
   }
 }
 
+button {
+  color: #72568b;
+  border: 1px solid #72568b;
+}
+
 body {
   color: var(--foreground-rgb);
+  font-size: var(--font-size-roboto-large);
+  font-family: "__Roboto_Slab_977408", "__Roboto_Slab_Fallback_977408";
+  background-color: rgb(250, 245, 255);
+  overflow-y: scroll;
 }
 
 @layer utilities {
@@ -30,4 +40,29 @@ body {
   height: 21px;
   max-width: 28px;
   width: 100%;
+}
+
+.title {
+  font-size: clamp(30px, 4vw, 60px);
+}
+
+.lg-title {
+  font-size: clamp(75px, 6vw, 120px);
+  text-shadow: rgb(100 100 111/70%) 0px 0px 20px;
+  margin-bottom: clamp(20px, 2vw, 40px);
+  line-height: 100%;
+}
+
+#section1 {
+  background-image: url("https://www.myalbum.com/_next/image?url=%2Fimages%2Ffrontpage%2Fheader_background.jpg&w=640&q=30");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .lg-title {
+    font-size: clamp(40px, 10vw, 50px);
+  }
 }

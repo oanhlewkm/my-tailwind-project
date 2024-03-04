@@ -3,9 +3,9 @@ import ShoppingCartIcon from "../icons/shopping-cart";
 
 export default function Navbar() {
   return (
-    <nav className="bg-white relative">
+    <nav className="relative z-50">
       <div
-        className="flex items-center justify-between mx-auto px-4 py-2 md:py-3 fixed w-full"
+        className="bg-white flex items-center justify-between mx-auto px-4 py-2 md:py-3 fixed w-full"
         style={{
           borderBottom: "1px solid #f1e0ff",
         }}
@@ -40,21 +40,21 @@ export default function Navbar() {
           <ul className="flex items-center md:p-0 flex-row space-x-2 md:space-x-5 justify-end">
             <li>
               <a href="#" className="block" aria-current="page">
-                <button className="px-4 py-2">
+                <button className="px-4 py-2 border-0">
                   <ShoppingCartIcon />
                 </button>
               </a>
             </li>
             <li>
               <a href="#" className="block" aria-current="page">
-                <button className="rounded-full px-4 py-1 border-slate-700 border-2 border-solid hover:bg-violet-700 hover:text-white hover:border-violet-700">
+                <button className="rounded-full px-4 py-1 border-slate-700 border border-solid hover:bg-violet-700 hover:text-white hover:border-violet-700">
                   Login
                 </button>
               </a>
             </li>
             <li>
               <a href="#" className="block" aria-current="page">
-                <button className="rounded-full bg-violet-700	text-white border-violet-700 px-4 py-1 border-solid border-2 hover:opacity-50">
+                <button className="rounded-full bg-violet-700	text-white border-violet-700 px-4 py-1 border-solid border hover:opacity-50">
                   Register
                 </button>
               </a>

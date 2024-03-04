@@ -11,6 +11,12 @@ const nextConfig = {
       },
       {
         protocol: "https",
+        hostname: "www.myalbum.com",
+        port: "",
+        pathname: "/_next/image/**",
+      },
+      {
+        protocol: "https",
         hostname: "static.myalbum.io",
         port: "",
         pathname: "/_static/**",
