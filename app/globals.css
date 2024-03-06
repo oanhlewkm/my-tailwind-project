@@ -7,6 +7,7 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
   --font-size-roboto-large: 16px;
+  --accent-color-rgb: 113, 83, 138;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,7 +26,7 @@ button {
 body {
   color: var(--foreground-rgb);
   font-size: var(--font-size-roboto-large);
-  font-family: "__Roboto_Slab_977408", "__Roboto_Slab_Fallback_977408";
+  font-family: "Source Sans Pro", sans-serif;
   background-color: rgb(250, 245, 255);
   overflow-y: scroll;
 }
@@ -76,16 +77,56 @@ body {
   white-space: nowrap;
   height: 23px;
 }
-.footer-title {
-  color: rgb(113, 83, 138);
-}
 
 .front-image {
   right: 20px;
   bottom: 0;
 }
+
 .front-image img {
   height: 100%;
   max-height: 75vh;
   width: 50vh;
+}
+
+.modal-logo img {
+  height: 24px;
+  width: 100%;
+}
+
+.text-accent {
+  color: rgb(var(--accent-color-rgb));
+}
+
+.hr {
+  font-size: 13px;
+  color: rgb(196, 174, 214);
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hr::after {
+  content: "";
+  margin-left: 15px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -ms-flex: 1;
+  /* flex: 1; */
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid rgb(196, 174, 214);
+}
+
+.hr::before {
+  content: "";
+  margin-right: 15px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -ms-flex: 1;
+  /* flex: 1; */
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid rgb(196, 174, 214);
 }

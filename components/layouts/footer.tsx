@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="w-full py-40 px-10">
           <div className="flex flex-col md:flex-row space-x-10 space-y-10 md:space-y-0 justify-center">
             <div className="flex-col space-y-3 text-center">
-              <div className="footer-title font-extrabold text-xl uppercase">
+              <div className="text-accent font-extrabold text-xl uppercase">
                 MyAlbum
               </div>
               <div className=" flex-col space-y-1 text-center">
@@ -36,7 +36,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="flex-col space-y-3 text-center">
-              <div className="footer-title font-extrabold text-xl uppercase">
+              <div className="text-accent font-extrabold text-xl uppercase">
                 Products
               </div>
               <div className=" flex-col space-y-1 text-center">
@@ -63,7 +63,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="flex-col space-y-3 text-center">
-              <div className="footer-title font-extrabold text-xl uppercase">
+              <div className="text-accent font-extrabold text-xl uppercase">
                 For professionals
               </div>
               <div className=" flex-col space-y-1 text-center">
@@ -90,7 +90,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="flex-col space-y-3 text-center">
-              <div className="footer-title font-extrabold text-xl uppercase">
+              <div className="text-accent font-extrabold text-xl uppercase">
                 Follow us
               </div>
               <div className=" flex-col space-y-1 text-center">
