@@ -4,10 +4,11 @@ export default function Footer() {
       style={{
         background: "rgb(113, 83, 138, 0.1)",
       }}
+      className="font-extralight"
     >
       <div className="container mx-auto">
-        <div className="w-full py-40 px-10">
-          <div className="flex flex-col md:flex-row space-x-10 space-y-10 md:space-y-0 justify-center">
+        <div className="w-full py-20 md:py-40 px-10">
+          <div className="footer-menu flex flex-col md:flex-row space-x-0 md:space-x-10 space-y-10 md:space-y-0 justify-center">
             <div className="flex-col space-y-3 text-center">
               <div className="text-accent font-extrabold text-xl uppercase">
                 MyAlbum
@@ -114,6 +115,20 @@ export default function Footer() {
                     Facebook
                   </a>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div className="footer-bottom flex flex-row justify-center py-6">
+            <div className="flex flex-row space-x-3 text-center">
+              <div>
+                <a href="" className="font-light footer-link">
+                  Legal
+                </a>
+              </div>
+              <div>
+                <a href="/privacy" className="font-light footer-link">
+                  Privacy
+                </a>
               </div>
             </div>
           </div>

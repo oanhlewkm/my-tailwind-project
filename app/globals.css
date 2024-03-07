@@ -8,6 +8,7 @@
   --background-end-rgb: 255, 255, 255;
   --font-size-roboto-large: 16px;
   --accent-color-rgb: 113, 83, 138;
+  --main-text-color-rgb: 77, 77, 77;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,7 +25,7 @@ button {
 }
 
 body {
-  color: var(--foreground-rgb);
+  color: rgb(var(--main-text-color-rgb));
   font-size: var(--font-size-roboto-large);
   font-family: "Source Sans Pro", sans-serif;
   background-color: rgb(250, 245, 255);
@@ -129,4 +130,10 @@ body {
   /* flex: 1; */
   border-top: 1px solid transparent;
   border-bottom: 1px solid rgb(196, 174, 214);
+}
+
+.subtitle {
+  line-height: 1;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
 }
